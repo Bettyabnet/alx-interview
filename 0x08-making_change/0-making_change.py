@@ -3,11 +3,10 @@
 
 
 def makeChange(coins, total):
-    """Finds the minimal number of coins required 
+    """Finds the minimal number of coins required
     to reach the given total amount"""
     if total <= 0:
         return 0
-
     current_total = 0
     used_coins = 0
     coins = sorted(coins, reverse=True)
